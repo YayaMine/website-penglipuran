@@ -1,0 +1,50 @@
+.reset-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #4e9aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.reset-box {
+  width: 450px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.input {
+  width: 100%;
+  padding: 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 15px;
+  background: #fff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 100%;
+  padding: 18px;
+  margin-top: 10px;
+  background-color: #2f4f4f;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}

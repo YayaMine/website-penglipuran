@@ -1,0 +1,97 @@
+
+.login-container {
+  background: url('/desa3.jpg') no-repeat center center/cover;
+  position: relative;
+  width: 100vw;    
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.6); 
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(10px);  
+  padding: 40px;
+  border-radius: 15px;
+  width: 350px; 
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); 
+  position: relative; 
+}
+
+
+.login-title {
+  color: black;
+  font-size: 28px;
+  margin-top: 30px; 
+  margin-bottom: 5px;
+  letter-spacing: 2px; 
+  font-family:  'Times New Roman', Times, serif;
+}
+
+
+.underline {
+  width: 60px; 
+  height: 3px;
+  background-color: #2196f3; 
+  margin: 0 auto 30px auto; 
+}
+
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.login-input {
+  background-color: rgba(255, 255, 255, 0.9); 
+  border: none;
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.login-input::placeholder {
+  color: black;
+}
+
+.login-input:focus {
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 2px #2196f3;
+}
+
+
+.login-button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 25px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #1976d2;
+  transform: translateY(-2px); 
+}
+
+.login-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
