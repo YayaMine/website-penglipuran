@@ -1,0 +1,206 @@
+/* ===== PAGE ===== */
+.booking-page {
+  background: #f6fbfc;
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== CONTAINER (INI KUNCI CENTER) ===== */
+.booking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.booking-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.booking-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* ===== PAKET ===== */
+.paket-grid {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.paket-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1; /* BIAR CARD RATA */
+  min-height: 230px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.paket-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.paket-card h3 {
+  margin-bottom: 10px;
+}
+
+.paket-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+}
+
+.paket-card li {
+  margin-bottom: 6px;
+}
+
+.paket-card button {
+  align-self: flex-start;
+  background: #5aa6ad;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.paket-card button:hover {
+  background: #3b8e97;
+}
+
+/* ===== REVIEWS ===== */
+.review-section {
+  margin-top: 40px;
+}
+
+.review-section h2 {
+  margin-bottom: 20px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.review-card {
+  background: white;
+  height: 90px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #cfdfe3;
+}
+
+/* ===== COMMENT ===== */
+.comment-area {
+  margin-top: 25px;
+}
+
+.comment-box {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.comment-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.comment-box button {
+  background: #4fa3ad;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.comment-box button:hover {
+  background: #3b8e97;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .paket-grid {
+    flex-wrap: wrap;
+  }
+
+  .paket-card {
+    flex: 0 0 48%;
+  }
+
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .paket-card {
+    flex: 0 0 100%;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== BACK BUTTON ===== */
+.btn-back {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.btn-back:hover {
+  background: #f0fafa;
+  color: #5aa6ad;
+  transform: translateX(-3px);
+}
+
+.paket-desc {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0 15px;
+  min-height: 40px;
+}
+
+.paket-title {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.paket-price {
+  font-weight: bold;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}

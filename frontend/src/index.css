@@ -1,0 +1,37 @@
+/* ===== RESET GLOBAL ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== ROOT ===== */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #f6fbfc; /* samakan dengan booking-page */
+  color: #213547;
+  overflow-x: hidden;
+}
+
+/* ===== LINK ===== */
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== BUTTON ===== */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}

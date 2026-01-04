@@ -1,0 +1,178 @@
+.ticket-page {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("/desa1.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.ticket-page h1 {
+  margin: 30px 0;
+}
+
+.ticket-section {
+  max-width: 900px;
+  margin: auto;
+}
+
+.ticket-group {
+  margin-bottom: 30px;
+}
+
+.ticket-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.ticket-card {
+  background: #5aa6ad;
+  padding: 15px 25px;
+  border-radius: 10px;
+  min-width: 200px;
+  cursor: pointer;
+}
+
+.ticket-card strong {
+  display: block;
+  margin-top: 8px;
+}
+
+.btn-order {
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: #355f60;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.ticket-card {
+  background: #5aa6ad;
+  padding: 15px 25px;
+  border-radius: 10px;
+  min-width: 200px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.ticket-card:hover {
+  background: #4b9aa0;
+}
+
+.ticket-card.active {
+  background: #2f5f61;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.qty-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.qty-control button {
+  background: none;
+  border: 1px solid white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.qty-control span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+/* ===== ORDER MODAL ===== */
+.order-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.order-modal {
+  background: white;
+  width: 380px;
+  padding: 25px;
+  border-radius: 12px;
+  position: relative;
+  text-align: center;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.order-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.order-form button {
+  background: #5aa6ad;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.order-summary {
+  margin: 15px 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+.order-ticket-list p {
+  margin: 4px 0;
+}
+
+.total-harga {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #2f5f61;
+}
+/* ===== FIX WARNA TEXT MODAL ===== */
+.order-modal {
+  color: #222; 
+}
+.order-modal h2 {
+  color: #222;
+}
+
+.order-summary p {
+  color: #333;
+}
+
+.order-ticket-list p {
+  color: #444;
+}
